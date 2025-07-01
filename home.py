@@ -572,7 +572,10 @@ if st.button("Generate Query and Execute"):
                                 raise ValueError("Query contains potentially dangerous operations. Only SELECT queries are allowed.")
                             
                             print(f"Executing SQL query for {data_source}")
-                            results = execute_query(query_text, connector_type=connector_type, **connector_params)
+                            if connector_type in ["file_connector", "gsheets_connector"]:
+                                 results = execute_query(query_dict, connector_type=connector_type, **connector_params)
+                            else:
+                                 results = execute_query(query_text, connector_type=connector_type, **connector_params)
                             
                             # Display results in the Results tab
                             with tabs[0]:
