@@ -22,42 +22,6 @@ This project aims to simplify data interaction by allowing users to ask question
 -   **Dynamic Prompt Templates:** Utilizes `tpch_prompt.yaml` for structured prompt generation, enhancing LLM accuracy.
 -   **Robust Error Handling:** Comprehensive error handling for connection issues, query execution failures, and API errors.
 
-## Installation
-
-### Prerequisites
-
--   Python 3.9 or higher
--   `pip` package manager
-
-### Setup
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/ai_sql_assistant.git
-    cd ai_sql_assistant
-    ```
-
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    # On Windows:
-    .\venv\Scripts\activate
-    # On macOS/Linux:
-    source venv/bin/activate
-    ```
-
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Configure API Keys:**
-    Create a `.streamlit/secrets.toml` file in your project directory and add your OpenRouter API key:
-    ```toml
-    OPENROUTER_API_KEY="your_api_key_here"
-    ```
-    Make sure to add `.streamlit/secrets.toml` to your `.gitignore` file.
-
 ## Usage
 
 1.  **Start the application:**
