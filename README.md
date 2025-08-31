@@ -8,6 +8,10 @@ An AI-powered SQL assistant that enables users to query various data sources usi
 
 This project aims to simplify data interaction by allowing users to ask questions in plain English and receive SQL queries or data manipulations as results. It supports a variety of data sources, making it a versatile tool for data analysts, developers, and business users.
 
+## Project Preview
+
+https://connect-with-data.streamlit.app
+
 ## Features
 
 -   **Natural Language to Query Conversion:** Translate natural language questions into executable SQL queries or data manipulation commands.
